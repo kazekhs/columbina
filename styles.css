@@ -1,0 +1,230 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  background-image: url("https://i.pinimg.com/736x/c1/27/d1/c127d1783d72dac8d1ab6b8b3e426ea1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  font-family: "Ms Gothic", "sans-serif";
+  margin: 0;
+  padding: 20px;
+  cursor: url("https://files.catbox.moe/lt5zdg.gif"), auto;
+}
+
+.site-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.outer-lace-border {
+  border: 20px solid white;
+  border-image: url("https://i.postimg.cc/wvsqvDM7/gi0vby.png")
+    25 fill round;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.inner-container {
+  background-color: white;
+  background-image: url("https://i.pinimg.com/736x/1e/8f/60/1e8f60e177c66722304e14e6cfab2ec0.jpg");
+  padding: 15px;
+  border: 1px dashed #7c7c7c;
+  border-radius: 20px;
+}
+
+.main-header img {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #7c7c7c;
+}
+
+*/
+h1 {
+  margin: 0;
+}
+
+
+h2 {
+  text-align: left;
+  margin: 0;
+}
+
+.char-title {
+  text-align: center;
+  margin: 0 0 5px;
+  letter-spacing: 1px;
+  transform: translateX(3px);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.content-layout {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.side-nav,
+.main-content,
+.side-misc {
+  min-width: 0;
+}
+
+.side-nav,
+.side-misc {
+  flex: 1;
+  background: white;
+  border: 1px dashed #7c7c7c;
+  padding: 15px;
+}
+
+.main-content {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 14px;
+  color: black;
+  text-align: justify;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+h3 {
+  font-size: 16px;
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 3px;
+}
+
+li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.intro-article,
+.log-box {
+  background: white;
+  border: 1px solid #7c7c7c;
+  padding: 10px;
+}
+
+.update-log {
+  border: 10px solid #7c7c7c;
+  border-image: url("https://file.garden/ZmMRACOgiFXI9dml/tumblr_8790d132be56e8d851bc5324c572836b_5305a543_100.jpg")
+    30 fill round;
+}
+
+.cbox-container audio {
+  width: 100%;
+}
+
+.log-box {
+  height: 100px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 4px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-footer p {
+  text-align: center;
+  margin-top: 10px;
+  font-size:16;
+}
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  min-width: 0;
+}
+
+.marquee-content {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 10s linear infinite;
+}
+
+.marquee-content img {
+  height: 50px;
+  margin-right: 1px;
+  flex: 0 0 auto;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 800px) {
+  .content-layout {
+    flex-direction: column;
+  }
+
+  .side-nav,
+  .side-misc,
+  .main-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+
+  .outer-lace-border {
+    border-width: 10px;
+  }
+}
+
